@@ -1,0 +1,407 @@
+/* .container {
+  max-width: 1080px;
+  margin: 20px auto;
+} */
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Professional font */
+  background: linear-gradient(135deg, #cce7ff, #a1d1f7); /* Light blue gradient background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 1080px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Search Bar */
+.async-paginate {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.async-paginate input {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Weather Card */
+.weather-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.weather-card h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.weather-card .temp {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0077ff;
+}
+
+.weather-card .details {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Daily Forecast */
+.daily-forecast {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 10px;
+}
+
+.forecast-item {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  min-width: 120px;
+  text-align: center;
+  flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+.forecast-item h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.forecast-item img {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
+}
+
+.forecast-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+/* Search Bar Styling */
+.async-paginate {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.async-paginate input {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #0077ff;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.async-paginate input:focus {
+  border-color: #0056b3;
+}
+
+.async-paginate__menu {
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.async-paginate__menu-list {
+  padding: 0;
+}
+
+.async-paginate__option {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.async-paginate__option:hover {
+  background-color: #f0f0f0;
+}
+
+.async-paginate__option--is-selected {
+  background-color: #0077ff;
+  color: white;
+}
+/* Dropdown Styling */
+.async-paginate__control {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ensures consistent width */
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 2px solid #0077ff;
+  transition: border-color 0.3s ease;
+}
+
+.async-paginate__control--is-focused {
+  border-color: #0056b3; /* Highlighted border on focus */
+}
+
+.async-paginate__menu {
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensures the dropdown matches the input's width */
+  max-width: 500px; /* Matches the input field width */
+  z-index: 1000; /* Ensures it is above other elements */
+}
+
+.async-paginate__menu-list {
+  padding: 0;
+  overflow-y: auto; /* Scrollable if too many options */
+}
+
+.async-paginate__option {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.async-paginate__option:hover {
+  background-color: #f0f0f0;
+}
+
+.async-paginate__option--is-selected {
+  background-color: #0077ff;
+  color: white;
+}
+
+/* App Header */
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.app-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  color: #0077ff;
+}
+
+.app-header p {
+  font-size: 18px;
+  margin: 5px 0 15px;
+  color: #555;
+}
+/* General container styling */
+.container {
+  max-width: 1080px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f8ff; /* Light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CRUD Section Styling */
+.weather-records {
+  margin-top: 20px;
+}
+
+.weather-records h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Form Styling */
+.weather-records form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.weather-records input,
+.weather-records button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.weather-records button {
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.weather-records button:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+/* List Styling */
+.weather-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* List Item Styling */
+.weather-list li {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between; /* Space out items evenly */
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Add horizontal spacing between elements */
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+}
+
+/* Text Styling */
+.weather-list span {
+  flex: 1; /* Allow each text element to grow equally */
+  text-align: left;
+}
+
+/* Button Container */
+.weather-list .buttons {
+  display: flex; /* Group buttons together */
+  gap: 10px; /* Add spacing between buttons */
+}
+
+/* Button Styling */
+.weather-list button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.weather-list button.update {
+  background-color: #007bff; /* Blue for update */
+  color: white;
+}
+
+.weather-list button.update:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.weather-list button.delete {
+  background-color: #dc3545; /* Red for delete */
+  color: white;
+}
+
+.weather-list button.delete:hover {
+  background-color: #c82333; /* Darker red */
+}
+/* Form Styling */
+.weather-records form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid */
+  gap: 10px; /* Add spacing between fields */
+  justify-items: center; /* Center the elements in each column */
+  margin-bottom: 15px;
+}
+
+/* Input Field Styling */
+.weather-records input {
+  width: 100%; /* Ensure inputs take full column width */
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Button Styling */
+.weather-records button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #007bff; /* Default blue color */
+  color: white;
+}
+
+.weather-records button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* List Item Styling */
+.weather-list li {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 2fr; /* Adjust column widths */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-list span {
+  font-size: 1rem;
+}
+
+.weather-list button {
+  margin-left: 0;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  background-color: #ffc107; /* Yellow for update */
+}
+
+.weather-list button.update:hover {
+  background-color: #e0a800; /* Darker yellow */
+}
+
+.weather-list button.delete {
+  background-color: #dc3545; /* Red for delete */
+}
+
+.weather-list button.delete:hover {
+  background-color: #c82333; /* Darker red */
+}
+
