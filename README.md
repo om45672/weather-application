@@ -1,17 +1,5 @@
 # MERN-stack Weather App
 
-*COMPANY*: CODTECH IT SOLUTIONS
-
-*NAME*: OM PATEL
-
-*INTERN ID*: CTIS8942
-
-*DOMAIN*: MERN STACK WEB DEVELOPMENT
-
-*DURATION*: 8 WEEKS
-
-*MENTOR*: NEELA SANTOSH
-
 React Weather App is a responsive web application that allows users to:
 
 - Search for real-time weather conditions by city.
